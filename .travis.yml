@@ -23,3 +23,9 @@ script:
   - python-codacy-coverage -r coverage.xml
   - flake8 .
   
+notifications:
+  email:
+    recipients:
+      - davmorllu@alum.us.es
+    on_success: never # default: change
+    on_failure: always # default: always
